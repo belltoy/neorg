@@ -199,7 +199,7 @@ module.load = function()
     if module.config.public.configure_parsers then
         -- luacheck: push ignore
 
-        local parser_configs = require("nvim-treesitter.parsers").get_parser_configs()
+        local parser_configs = require("nvim-treesitter.parsers")
 
         parser_configs.norg = {
             install_info = module.config.public.parser_configs.norg,
